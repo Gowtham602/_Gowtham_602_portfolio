@@ -47,7 +47,7 @@ export default function Hero() {
     transition={{ delay: 0.2, duration: 0.6 }}
   >
     <div className="avatar-circle">
-      <img src="./profile/profile.png" alt="Gowtham" />
+      <img src="./profile/profile.png" alt="Gowthams" />
     </div>
   </motion.div>
 
