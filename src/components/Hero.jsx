@@ -4,7 +4,7 @@ import "../styles/Hero.css";
 
 export default function Hero() {
   const typed = useTypingEffect(
-    "React Developer • Laravel • Frontend Engineer",
+    "React & Laravel Developer • Building scalable, high-performance web applications -> ..!",
     80,
     2000
   );
@@ -29,8 +29,13 @@ export default function Hero() {
     </h2>
 
     <p className="hero-desc">
-      I design and build high-quality web applications with a strong focus on
-      performance, scalability, and clean UI.
+        I’m a Web Developer with hands-on experience in building
+    real-world web applications using React and Laravel.
+
+    Currently working at Ideal Software, Porur, where I contribute
+    to a live e-commerce platform and internal enterprise systems.
+    I focus on clean UI, performance, and scalable backend logic.
+
     </p>
 
     <div className="hero-actions">

@@ -5,6 +5,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Timeline from "./components/Timeline";
 import Project from "./components/Projects";
+import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import ScrollTop from "./components/ScrollTop";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Skills />
       <Timeline />
+      <Experience />
       <Project />
       <Contact />
       <ScrollTop />

@@ -111,7 +111,7 @@ export default function Skills() {
                       style={{ background: skill.color }}
                       initial={{ width: "0%" }}
                       animate={{ width: `${skill.levelValue}%` }}
-                      transition={{ duration: 1 }}
+                      transition={{ duration: 2 }}
                     />
                   </div>
 
