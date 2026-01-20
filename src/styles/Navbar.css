@@ -1,0 +1,116 @@
+/* ===============================
+   NAVBAR
+================================ */
+
+.premium-nav {
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+
+.nav-show {
+  transform: translateY(0);
+}
+
+.nav-hide {
+  transform: translateY(-100%);
+}
+
+/* LOGO */
+.brand-text {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-main) !important;
+}
+
+.brand-text span {
+  color: var(--accent);
+}
+
+/* LINKS */
+.premium-link {
+  color: var(--text-muted) !important;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.premium-link:hover,
+.premium-link.active {
+  color: var(--accent) !important;
+}
+
+/* UNDERLINE */
+.premium-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.premium-link.active::after,
+.premium-link:hover::after {
+  width: 100%;
+}
+
+/* MOBILE MENU */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--bg-secondary);
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+}
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+/* ===============================
+   HAMBURGER BASE
+================================ */
+.navbar-toggler {
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  transition: opacity 0.3s ease;
+}
+
+/* ===============================
+   DARK MODE HAMBURGER (WHITE)
+================================ */
+[data-theme="dark"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ===============================
+   LIGHT MODE HAMBURGER (DARK)
+================================ */
+[data-theme="light"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(15,23,42,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggler:hover {
+  border-color: var(--accent);
+}

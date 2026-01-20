@@ -1,0 +1,64 @@
+/* ===============================
+   DESIGN SYSTEM (PRO LEVEL)
+================================ */
+
+/* DARK THEME */
+[data-theme="dark"] {
+  --bg-main: #0b0f14;
+  --bg-secondary: #111827;
+  --bg-glass: rgba(17, 24, 39, 0.85);
+
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --accent: #38bdf8;
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+/* LIGHT THEME */
+[data-theme="light"] {
+  --bg-main: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+
+  --accent: #0284c7;
+  --border: rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   GLOBAL STYLES
+================================ */
+
+body {
+  scroll-behavior: smooth;
+  padding-top: 0px;
+  background: linear-gradient(
+    180deg,
+    var(--bg-secondary),
+    var(--bg-main)
+  );
+  color: var(--text-main);
+  font-family: "Inter", system-ui, sans-serif;
+  transition: background 0.6s ease, color 0.4s ease;
+}
+
+section {
+  scroll-margin-top: 90px;
+  padding: 80px 0;
+}
+
+
+/* skills animation */
+.skill { margin-bottom: 18px; }
+.bar {
+  background: var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.bar div {
+  height: 8px;
+  background: linear-gradient(90deg, var(--accent), #60a5fa);
+}
