@@ -1,6 +1,7 @@
 import "../styles/Projects.css";
 
 
+
 const projects = [
   {
     title: "E-Commerce Platform",
