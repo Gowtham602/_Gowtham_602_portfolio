@@ -2,6 +2,99 @@
    HERO SECTION
 ================================ */
 
+
+.hero-actions{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+}
+
+.hero-btn{
+
+    padding:14px 30px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:180px;
+}
+
+/* PRIMARY BUTTON */
+
+.primary-btn{
+
+    background:linear-gradient(
+        135deg,
+        #38bdf8,
+        #0ea5e9
+    );
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(56,189,248,0.3);
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(56,189,248,0.45);
+}
+
+/* RESUME BUTTON */
+
+.resume-btn{
+
+    border:2px solid #38bdf8;
+
+    color:#38bdf8;
+
+    background:transparent;
+}
+
+.resume-btn:hover{
+
+    background:#38bdf8;
+
+    color:#fff;
+
+    transform:translateY(-4px);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero-actions{
+
+        justify-content:center;
+    }
+
+    .hero-btn{
+
+        width:100%;
+
+        max-width:260px;
+    }
+}
 .hero-section {
 
   min-height: 100vh;

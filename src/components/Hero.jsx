@@ -39,9 +39,31 @@ export default function Hero() {
     </p>
 
     <div className="hero-actions">
-      <a href="#projects" className="btn btn-primary">View Projects</a>
-      <a href="#contact" className="btn btn-outline">Contact Me</a>
-    </div>
+
+  <a
+    href="#projects"
+    className="hero-btn primary-btn"
+  >
+    View Projects
+  </a>
+
+  <a
+    href="/resume/gowtham-resume.pdf"
+    target="_blank"
+    rel="noreferrer"
+    className="hero-btn resume-btn"
+  >
+    View Resume
+  </a>
+  <a
+  href="/resume/gowtham-resume.pdf"
+  download="Gowtham602-Resume.pdf"
+  className="hero-btn resume-btn"
+>
+  Download Resume
+</a>
+
+</div>
   </motion.div>
 
   {/* RIGHT: IMAGE */}
@@ -56,9 +78,9 @@ export default function Hero() {
     </div>
   </motion.div>
 
-  <div className="scroll-indicator">
+  {/* <div className="scroll-indicator">
     <span />
-  </div>
+  </div> */}
 </section>
 
   );

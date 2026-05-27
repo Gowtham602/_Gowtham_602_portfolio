@@ -26,7 +26,7 @@ function App() {
       <Experience />
       <Project />
       <Contact />
-      <SocialButtons />
+      {/* <SocialButtons /> */}
 
       <ScrollTop />
       <WhatsAppButton />

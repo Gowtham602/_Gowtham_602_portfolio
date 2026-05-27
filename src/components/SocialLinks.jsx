@@ -42,7 +42,7 @@ export default function SocialLinks() {
         {/* LINKEDIN */}
 
         <a
-          href="https://linkedin.com"
+          href="http://linkedin.com/in/gowtham602/  "
           target="_blank"
           rel="noreferrer"
           className="social-card linkedin"
