@@ -12,7 +12,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import SocialButtons from "./components/SocialButtons";
 import ThemeToggle from "./components/ThemeToggle";
 import SocialLinks from "./components/SocialLinks";
-
+import VisitorTracker from "./components/VisitorTracker";
 function App() {
   return (
     <>
@@ -31,6 +31,7 @@ function App() {
       <ScrollTop />
       <WhatsAppButton />
       <SocialLinks/>
+      <VisitorTracker />
     </>
   );
 }
