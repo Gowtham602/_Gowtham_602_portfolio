@@ -23,7 +23,7 @@ export default function Contact() {
 
         "service_munqorq",
 
-        "service_munqorq",
+        "template_d2zstyh",
 
         form.current,
 
