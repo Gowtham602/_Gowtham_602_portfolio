@@ -1,10 +1,26 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
 import {
-  FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaReact,
-  FaJava, FaPhp, FaGitAlt, FaGithub, FaDatabase
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaJs,
+  FaReact,
+  FaJava,
+  FaPhp,
+  FaGitAlt,
+  FaGithub,
+  FaDatabase
 } from "react-icons/fa";
-import { SiPostman, SiSwagger, SiSpringboot, SiLaravel } from "react-icons/si";
+
+import {
+  SiPostman,
+  SiSwagger,
+  SiSpringboot,
+  SiLaravel
+} from "react-icons/si";
+
 import "../styles/Skills.css";
 
 const skillGroups = [
@@ -18,6 +34,7 @@ const skillGroups = [
       { name: "React.js", icon: FaReact, color: "#61DAFB", levelText: "Learning", levelValue: 55 },
     ],
   },
+
   {
     title: "Backend",
     skills: [
@@ -25,6 +42,7 @@ const skillGroups = [
       { name: "PHP", icon: FaPhp, color: "#777BB4", levelText: "Intermediate", levelValue: 65 },
     ],
   },
+
   {
     title: "Frameworks",
     skills: [
@@ -32,6 +50,7 @@ const skillGroups = [
       { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F", levelText: "Learning", levelValue: 45 },
     ],
   },
+
   {
     title: "Tools",
     skills: [
@@ -41,6 +60,7 @@ const skillGroups = [
       { name: "Swagger", icon: SiSwagger, color: "#85EA2D", levelText: "Basic", levelValue: 50 },
     ],
   },
+
   {
     title: "Database",
     skills: [
@@ -51,78 +71,163 @@ const skillGroups = [
 ];
 
 export default function Skills() {
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
+
     const timer = setInterval(() => {
-      setActiveIndex(prev =>
+
+      setActiveIndex((prev) =>
         prev === skillGroups.length - 1 ? 0 : prev + 1
       );
-    }, 3500); //   seconds per card
+
+    }, 3500);
 
     return () => clearInterval(timer);
+
   }, []);
 
   const group = skillGroups[activeIndex];
 
   return (
+
     <section className="skills-section" id="skills">
-      <h2 className="skills-title">My Skills</h2>
+
+      <h2 className="skills-title">
+        My Skills
+      </h2>
 
       <div className="skills-single-container">
+
         <AnimatePresence mode="wait">
+
           <motion.div
             key={group.title}
             className="skill-card"
-            initial={{ opacity: 0, x: 120 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -120 }}
-            transition={{ duration: 0.7 }}
+
+            style={{
+              minHeight: `${group.skills.length * 95 + 180}px`
+            }}
+
+            initial={{
+              opacity: 0,
+              scale: 0.95
+            }}
+
+            animate={{
+              opacity: 1,
+              scale: 1
+            }}
+
+            exit={{
+              opacity: 0,
+              scale: 0.95
+            }}
+
+            transition={{
+              duration: 0.5
+            }}
           >
 
-            <h3 className="skill-group-title">{group.title}</h3>
+            <h3 className="skill-group-title">
+              {group.title}
+            </h3>
 
-            {/* 20-second visual timer */}
+            {/* TIMER */}
+
             <div className="timer-bar-bg">
+
               <motion.div
                 className="timer-bar-fill"
+
                 initial={{ width: "0%" }}
+
                 animate={{ width: "100%" }}
-                transition={{ duration: 3.5, ease: "linear" }}
+
+                transition={{
+                  duration: 3.5,
+                  ease: "linear"
+                }}
               />
+
             </div>
 
+            {/* SKILLS */}
+
             {group.skills.map((skill) => {
+
               const Icon = skill.icon;
 
               return (
-                <div key={skill.name} className="skill-item">
+
+                <div
+                  key={skill.name}
+                  className="skill-item"
+                >
+
                   <div className="skill-header">
+
                     <div className="skill-left">
-                      <Icon style={{ color: skill.color }} className="skill-icon" />
-                      <span className="skill-name">{skill.name}</span>
+
+                      <Icon
+                        className="skill-icon"
+                        style={{
+                          color: skill.color
+                        }}
+                      />
+
+                      <span className="skill-name">
+                        {skill.name}
+                      </span>
+
                     </div>
-                    <span className="skill-level-text">{skill.levelText}</span>
+
+                    <span className="skill-level-text">
+                      {skill.levelText}
+                    </span>
+
                   </div>
 
                   <div className="progress-bar-bg">
+
                     <motion.div
                       className="progress-bar-fill"
-                      style={{ background: skill.color }}
-                      initial={{ width: "0%" }}
-                      animate={{ width: `${skill.levelValue}%` }}
-                      transition={{ duration: 2 }}
+
+                      style={{
+                        background: skill.color
+                      }}
+
+                      initial={{
+                        width: "0%"
+                      }}
+
+                      animate={{
+                        width: `${skill.levelValue}%`
+                      }}
+
+                      transition={{
+                        duration: 2
+                      }}
                     />
+
                   </div>
 
-                  <span className="skill-percent">{skill.levelValue}%</span>
+                  <span className="skill-percent">
+                    {skill.levelValue}%
+                  </span>
+
                 </div>
+
               );
             })}
 
           </motion.div>
+
         </AnimatePresence>
+
       </div>
+
     </section>
   );
 }

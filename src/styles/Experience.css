@@ -1,11 +1,11 @@
 .experience-section {
-  padding: 120px 20px;
+  padding: 10px 10px;
 }
 
 .section-title {
   text-align: center;
   font-size: 2.6rem;
-  margin-bottom: 90px;
+  margin-bottom: 10px;
 }
 
 /* Timeline wrapper */
@@ -102,7 +102,7 @@
 ================================ */
 @media (max-width: 768px) {
   .experience-section {
-    padding: 80px 16px;
+    padding: 10px;
   }
 
   .section-title {

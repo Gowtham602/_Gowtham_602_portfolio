@@ -1,0 +1,56 @@
+.social-buttons{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:90px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    z-index:999;
+}
+
+.social-btn{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+
+    transition:0.3s;
+}
+
+.social-btn:hover{
+
+    transform:translateY(-5px);
+}
+
+.whatsapp-btn{
+
+    background:#25D366;
+}
+
+.instagram-btn{
+
+    background:#E1306C;
+}

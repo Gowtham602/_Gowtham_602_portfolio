@@ -1,148 +1,130 @@
 .skills-section{
-  padding: 90px 16px;
-  background: #050b12;
-  color: white;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:10px 20px;
+    overflow:hidden;
 }
 
 .skills-title{
-  text-align: center;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  margin-bottom: 30px;
+    font-size:40px;
+    margin-bottom:40px;
+    color:#fff;
+    padding-bottom: 30px;
 }
 
-/* Center container */
 .skills-single-container{
-  max-width: 650px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+    width:100%;
+    max-width:650px;
+    height:500px; /* FIXED HEIGHT */
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-/* Unique glass card */
 .skill-card{
-  width: 100%;
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
-  padding: clamp(16px, 3vw, 26px);
-  border: 1px solid rgba(255,255,255,0.15);
-  box-shadow: 0 0 25px rgba(97,218,251,0.15);
-  position: relative;
-  overflow: hidden;
+    width:100%;
+    height:90%; /* FIXED */
+    background:#181e31;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    overflow:hidden;
+    position:absolute;
 }
 
-/* Gradient left glow */
-.skill-card::before{
-  content:"";
-  position:absolute;
-  left:0;
-  top:0;
-  height:100%;
-  width:6px;
-  background: linear-gradient(180deg,#61dafb,#ff2d20);
-}
-
-/* Floating dot */
-.skill-card::after{
-  content:"";
-  position:absolute;
-  top:12px;
-  right:12px;
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:#61dafb;
-  box-shadow: 0 0 10px #61dafb;
-}
-
-/* Category badge */
 .skill-group-title{
-  display:inline-block;
-  background:linear-gradient(90deg,#61dafb,#6db33f);
-  color:black;
-  padding:6px 14px;
-  border-radius:12px;
-  font-size: clamp(0.85rem, 2vw, 1rem);
-  margin-bottom: 10px;
+    font-size:28px;
+    margin-bottom:20px;
+    color:#fff;
+    text-align:center;
 }
 
-/* Timer bar */
 .timer-bar-bg{
-  width:100%;
-  height:5px;
-  background:#111;
-  border-radius:10px;
-  margin-bottom:12px;
-  overflow:hidden;
+    width:100%;
+    height:6px;
+    background:#2a2a2a;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:25px;
 }
 
 .timer-bar-fill{
-  height:100%;
-  background:linear-gradient(90deg,#61dafb,#ff2d20);
+    height:100%;
+    background:#00ffae;
+    border-radius:20px;
 }
 
-/* Skill item */
 .skill-item{
-  margin-bottom: 14px;
+    margin-bottom:18px;
 }
 
-/* Header */
 .skill-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:8px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
 }
 
-/* Left side */
 .skill-left{
-  display:flex;
-  align-items:center;
-  gap:8px;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 .skill-icon{
-  font-size: clamp(16px, 3vw, 20px);
+    font-size:24px;
 }
 
 .skill-name{
-  font-size: clamp(13px, 2.5vw, 14px);
+    color:#fff;
+    font-size:17px;
+    font-weight:500;
 }
 
-/* Progress bar */
+.skill-level-text{
+    color:#aaa;
+    font-size:14px;
+}
+
 .progress-bar-bg{
-  width:100%;
-  height:8px;
-  background:#222;
-  border-radius:10px;
-  margin-top:6px;
-  overflow:hidden;
+    width:100%;
+    height:10px;
+    background:#2a2a2a;
+    border-radius:30px;
+    overflow:hidden;
 }
 
 .progress-bar-fill{
-  height:100%;
-  border-radius:10px;
+    height:100%;
+    border-radius:30px;
 }
 
-/* Percent */
 .skill-percent{
-  font-size:12px;
-  text-align:right;
-  display:block;
-  margin-top:4px;
+    display:block;
+    text-align:right;
+    margin-top:5px;
+    color:#ccc;
+    font-size:13px;
 }
 
-/* ---- MOBILE PERFECT ---- */
-@media(max-width:600px){
-  .skills-single-container{
-    max-width: 100%;
-  }
+/* MOBILE */
 
-  .skill-card{
-    padding: 16px;
-  }
+@media(max-width:768px){
 
-  .skill-header{
-    flex-wrap: wrap;
-  }
+    .skills-single-container{
+        height:560px;
+    }
+
+    .skill-card{
+        padding:20px;
+    }
+
+    .skills-title{
+        font-size:32px;
+    }
 }

@@ -4,13 +4,13 @@ import "../styles/Hero.css";
 
 export default function Hero() {
   const typed = useTypingEffect(
-    "React & Laravel Developer • Building scalable, high-performance web applications -> ..!",
+    "React & Laravel Developer ",
     80,
     2000
   );
 
   return (
-    <section id="home" className="hero-section">
+    <section id="home" className="hero-section p">
   {/* LEFT: TEXT */}
   <motion.div
     className="hero-content"

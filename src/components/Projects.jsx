@@ -5,7 +5,7 @@ import "../styles/Projects.css";
 const projects = [
   {
     title: "Kodaichoco – E-commerce Platform",
-    image: "https://picsum.photos/600/400?random=1",
+    image: "/image/project/kodai-project-image.png",
     desc: "Live e-commerce platform with product listing, cart, checkout, and admin workflows.",
     impact: "Reduced checkout issues by 18%",
     tech: ["Laravel", "PHP", "MySQL", "JavaScript"],
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "Invoice Processing System",
-    image: "https://picsum.photos/600/400?random=2",
+    image: "/image/project/invoice-pic.png",
     desc: "Enterprise invoice scanning and approval system with role-based access.",
     impact: "Improved approval efficiency by 30%",
     tech: ["Laravel", "Blade", "AJAX", "MySQL"],
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: "Student Management System",
-    image: "https://picsum.photos/600/400?random=3",
+    image: "/image/project/schools-pic.png",
     desc: "Full-stack app to manage student records using REST APIs.",
     impact: "Handled 1k+ student records efficiently",
     tech: ["React", "Spring Boot", "MongoDB"],

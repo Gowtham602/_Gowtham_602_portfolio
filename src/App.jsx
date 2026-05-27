@@ -9,7 +9,9 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import ScrollTop from "./components/ScrollTop";
 import WhatsAppButton from "./components/WhatsAppButton";
+import SocialButtons from "./components/SocialButtons";
 import ThemeToggle from "./components/ThemeToggle";
+import SocialLinks from "./components/SocialLinks";
 
 function App() {
   return (
@@ -20,12 +22,15 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Timeline />
+      {/* <Timeline /> */}
       <Experience />
       <Project />
       <Contact />
+      <SocialButtons />
+
       <ScrollTop />
       <WhatsAppButton />
+      <SocialLinks/>
     </>
   );
 }
