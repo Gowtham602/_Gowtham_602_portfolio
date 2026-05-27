@@ -27,7 +27,7 @@ export default function Contact() {
 
         form.current,
 
-        "YOUR_PUBLIC_KEY"
+        "Y2GttQkPmAB4tEL4b"
       )
 
       .then(
