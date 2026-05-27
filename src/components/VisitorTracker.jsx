@@ -65,7 +65,7 @@ export default function VisitorTracker() {
           },
 
           "Kct-n8ohLbVlObbi345tJ"
-          Kct-n8ohLbVlObbi345tJ
+        
         )
 
         .then(() => {
