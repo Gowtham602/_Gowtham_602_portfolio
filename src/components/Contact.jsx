@@ -21,9 +21,9 @@ export default function Contact() {
     emailjs
       .sendForm(
 
-        "YOUR_SERVICE_ID",
+        "service_munqorq",
 
-        "YOUR_TEMPLATE_ID",
+        "service_munqorq",
 
         form.current,
 
