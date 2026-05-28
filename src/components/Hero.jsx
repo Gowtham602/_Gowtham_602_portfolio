@@ -20,9 +20,11 @@ export default function Hero() {
   >
     <p className="hero-intro">Hi, I’m</p>
 
-    <h1 className="hero-title">
-      Gowtham<span>.</span>
-    </h1>
+<h1 className="hero-title">
+  <span className="hero-firstletter">G</span>
+  owtham
+  <span className="hero-last">.S</span>
+</h1>
 
     <h2 className="hero-typing">
       {typed}<span className="cursor">|</span>
